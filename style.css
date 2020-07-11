@@ -38,7 +38,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 .display {
-  border: 2 px solid darkgreen;
+  border: 2px solid darkgreen;
   background-color: lightgreen;
   padding: 10px;
 }
@@ -47,12 +47,15 @@ font-family: 'Roboto', sans-serif;
   font-family: 'Open Sans', sans-serif;
 }
 
+.progress-bar {
+  transition: none;
+}
 .cup img, .atm img {
   width: 100%;
 }
 
 .change-box {
-  border: 3px solid black rgb(100, 100, 100);
+  border: 3px solid  rgb(100, 100, 100);
   background-color: rgb(200, 200, 200);
   min-height: 100px;
   box-sizing: border-box;

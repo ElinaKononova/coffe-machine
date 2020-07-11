@@ -14,37 +14,38 @@
     <div class="container">
       <div class="row mt-2">
         <div class="col-6 coffee-list d-flex flex-column justify-content-around">
-          <div class= "coffee-item" cost="50" data-name="Американо" data-name-eng="Americano" oneclick="cookCoffe("Американо", 50)">
+          <div class= "coffee-item" cost="50" data-name="Американо" data-name-eng="Americano" oneclick="cookCoffe('Американо', 50, this)">
             <img src="img/americano.png" alt="Американо">
             <span>Американо 50 руб.</span>
           </div>
-          <div class= "coffee-item" oneclick="cookCoffe("Капучино", 92)">
+          <div class= "coffee-item" oneclick="cookCoffe('Капучино', 92, this)">
             <img src="img/cappuccino.png" alt="Капучино">
             <span>Капучино 92 руб.</span>
           </div>
-          <div class= "coffee-item" oneclick="cookCoffe("Эспрессо", 66)">
+          <div class= "coffee-item" oneclick="cookCoffe('Эспрессо', 66, this)">
             <img src="img/espresso.png" alt="Эспрессо">
             <span>Эспрессо 66 руб.</span>
           </div>
-          <div class= "coffee-item" oneclick="cookCoffe("Латте", 128)">
+          <div class= "coffee-item" oneclick="cookCoffe('Латте', 128, this)">
             <img src="img/latte.jpg" alt="Латтэ">
             <span>Латте 128 руб.</span>
           </div>
         </div>
-        <div class="col-6 coffee-oper">
-          <div class="row">
+        <div class="col-6  mt-2 coffee-oper">
+          <div class="row mt-2">
             <div class="col-6">
-             <div class="display"></div> 
+             <div class="display"> 
                <span>Выберите кофе</span>
                <div class="progress mt-2">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 0%"></div>
                 </div>
-               </div>
+                </div>
               <div class="cup mt-5">
                 <img src="img/americano.png">
               </div>
-            </div>
-            <div class="col-6">
+               </div>
+
+              <div class="col-6">
               <div class="input-group mb-3">
                 <input type="text" class="form-control balance" placeholder="Баланс">
                 <div class="input-group-append">
@@ -57,8 +58,11 @@
               <button class="my-3 btn btn-primary btn-block change-button">Сдача</button>
               <div class="change-box"></div>
             </div>
+            </div>
+
           </div>
          </div>
+         
        </div>
      </div>
     <!-- Optional JavaScript -->
